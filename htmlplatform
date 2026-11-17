@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Learning Platform</title>
+
+    <style>
+        body {
+            font-family:Arial;
+            margin: 0;
+            background-color: #f2f5fa;
+        }
+
+        header {
+            background-color: #263b80;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #4a69bd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        h2 {
+            color: #263b80;
+            text-align: center;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 230px;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 220px;
+            height: 140px;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #263b80;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .objectives {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .instructor {
+            background-color: #dce6fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #263b80;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 85%;
+            }
+
+            .card img {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Learn Easy</h1>
+        <p>Learn New Skills From Anywhere</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#courses">Courses</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="welcome" id="home">
+        <h2>Welcome to Learn Easy</h2>
+        <p>Start Learning Today and Build Your Future!</p>
+    </div>
+    <h2 id="categories">Course Categories</h2>
+
+    <div class="courses">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Learn C, Python and Java.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>Learn AI and Machine Learning.</p>
+        </div>
+
+    </div>
+
+    <!-- Courses -->
+    <h2 id="courses">Our Courses</h2>
+
+    <div class="courses">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+
+            <h3>Python Programming</h3>
+
+            <p>Learn Python from Basics to Advanced.</p>
+
+            <p><b>Instructor:</b> Rahul Kumar</p>
+
+            <p><b>Duration:</b> 30 Days</p>
+
+            <button onclick="alert('Python Course Selected!')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+            <h3>Web Development</h3>
+
+            <p>Learn how to create websites using HTML and CSS.</p>
+
+            <p><b>Instructor:</b> Priya Sharma</p>
+
+            <p><b>Duration:</b> 45 Days</p>
+
+            <button onclick="alert('Web Development Course Selected!')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+
+            <h3>Artificial Intelligence</h3>
+
+            <p>Learn the basics of Artificial Intelligence.</p>
+
+            <p><b>Instructor:</b> Ravi Kumar</p>
+
+            <p><b>Duration:</b> 60 Days</p>
+
+            <button onclick="alert('AI Course Selected!')">
+                Enroll Now
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Learning Objectives -->
+    <div class="objectives">
+        <h2>Learning Objectives</h2>
+
+        <ul>
+            <li>Understand basic programming concepts.</li>
+            <li>Develop simple websites.</li>
+            <li>Learn new technologies.</li>
+            <li>Improve problem-solving skills.</li>
+            <li>Build real-world projects.</li>
+        </ul>
+    </div>
+
+    <!-- Video Lessons -->
+    <h2>Video Lessons</h2>
+
+    <div class="courses">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+            <h3>Python Introduction</h3>
+            <p>Lesson 1 - Introduction to Python</p>
+            <button onclick="alert('Video lesson selected!')">
+                Watch Lesson
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
+            <h3>HTML Basics</h3>
+            <p>Lesson 2 - Introduction to HTML</p>
+            <button onclick="alert('Video lesson selected!')">
+                Watch Lesson
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Instructor Profiles -->
+    <div class="instructor" id="instructors">
+
+        <h2>Our Instructors</h2>
+
+        <h3>Rahul Kumar</h3>
+        <p>Python Programming Trainer</p>
+
+        <h3>Priya Sharma</h3>
+        <p>Web Development Trainer</p>
+
+        <h3>Ravi Kumar</h3>
+        <p>Artificial Intelligence Trainer</p>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="objectives" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: learnEasy@gmail.com</p>
+
+        <p>Phone: 9876543210</p>
+
+        <p>Address: Vijayawada, Andhra Pradesh</p>
+
+    </div>
+    <footer>
+        <p>© 2026 Learn Easy Online Platform</p>
+        <p>Learn Today, Lead Tomorrow!</p>
+    </footer>
+
+</body>
+</html>
